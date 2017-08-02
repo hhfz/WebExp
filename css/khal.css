@@ -1,0 +1,100 @@
+/* 样式重置 */
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+body{ font-size: 13px; font-family: "微软雅黑"; min-width: 1100px;  }
+body,ul,p,h1,h2,h3,h4{ margin:0; }
+ul{ padding:0; }
+li{ list-style: none; }
+a{ color:#ccc; text-decoration: none; cursor:pointer; }
+a:hover{ color:#238DC7; }
+img{ border:0; }
+/* common */
+.fl{ float:left; }
+.fr{ float:right; }
+.clearfix{ zoom:1; }
+.clearfix:after{ content:''; display: block; clear: both; }
+
+/* layout */
+#header{ position: fixed; z-index: 10; left: 0;  top:0; width:100%; min-width:1100px; border-bottom:1px solid #000\9; box-shadow: 0 0 3px 1px #000;}
+#header section { position:relative; height:34px; background:#303030;  }
+#header nav { height:69px; background: #fff; }
+
+#content { position:relative; margin:105px 0 30px; padding:50px 0 30px; border-bottom:1px dashed #b2b2b2; }
+#content .main{ width:1000px; margin:0 auto; }
+#content header { margin-bottom: 40px; }
+#content .con_list { position:relative;  padding:20px 20px 40px; margin-bottom:20px; background: #ebebeb; }
+
+#footer nav{ height:300px; background:#222 ; }
+#footer section{ height:60px; border-top:1px solid #49475c; background:#333 ; }
+/* style */
+.hd_logo{ position: absolute; left:50px; top:22px; width:209px; height:43px; text-align:center; background: url(../images/logo_bg.png) no-repeat center bottom;}
+.hd_link{ float:right;  }
+.hd_link a{ float:left; line-height: 34px; padding-right: 15px; margin-right: 20px; color:#999; background: url(../images/header_arrow.png) no-repeat right center;}
+.hd_link a:hover{ color:#fff; background-image: url(../images/header_arrow_hover.png); }
+
+.hd_menu{ float:right; }
+.hd_menu li{ float:left; border-left:1px solid #bfbfbf; }
+.hd_menu a{  display:block; width: 101px; height:49px; padding:10px 0; text-align: center; color:#000; transition: .3s; }
+.hd_menu a:hover{ background: #4d4d4d; color:#fff; }
+.hd_menu i{ display: block; height:24px; margin-bottom:5px; background: url(../images/menu_ico.png) no-repeat center 0; transition: .5s;}
+.hd_menu li:hover i{ background-position: center -48px; }
+
+.con_a{ position: absolute; z-index:-1; left:50%; top:0; width:292px; height:430px; margin-left:-550px; background: url(../images/about_ee.jpg) no-repeat; }
+.con_line{ position: absolute; left:0; top:160px; height:1px; width:50%; margin-left: -360px; background: #ccc; }
+
+.main header{ padding:20px 0; }
+.main header img{ float:left; margin-top: 20px; }
+.con_link { float:right;  }
+.con_place { text-align:right; color:#1f2228; margin-top: 10px; } 
+.con_place span{ padding-left: 20px; margin-right: 10px; background: url(../images/right_arrow.jpg) no-repeat left center; }
+.con_place a{ color:#1f2228; }
+.con_place a:hover{ color:#ccc; }
+.con_menu{ margin-top: 20px;  }
+.con_menu a{ float:left; width:92px; height:28px; margin-left:10px ; line-height: 28px; text-align: center; border:1px solid #313131; background:#49494e ; color:#fff ; }
+.con_menu a:hover{ background:#e60012 ; border: 1px solid #da482e; }
+
+.con_list{ position: relative;  }
+.con_bar { position: absolute; left:-80px; top:0;  }
+.con_bar .bar_logo { z-index:2; height:76px; background:#d21f3d url(../images/side_show.png) no-repeat center ; cursor: pointer; }
+.con_bar li{ position:absolute; top:0; width:80px; /*transition: .3s;*/}
+.con_bar a{ display:block; height:76px; line-height:76px; text-align:center; color:#fff; border-bottom:1px solid #585858; background:#686868; }
+.con_bar a:hover{ background:#272727; }
+.con_bar .menu1{ top:76px; animation:menufall1 ease-in .5s ; }
+.con_bar .menu2{ top:153px; animation:menufall2 ease-in .5s ; }
+.con_bar .menu3{ top:230px; animation:menufall3 ease-in .5s ; }
+@keyframes menufall1{
+	0{ top:0;  }
+	60%{ top:86px;}
+	80%{ top:86px; }
+	100%{ top:76px; }
+}
+@keyframes menufall2{
+	0{ top:0;  }
+	60%{ top:173px;}
+	80%{ top:173px; }
+	100%{ top:153px; }
+}
+@keyframes menufall3{
+	0{ top:0;  }
+	60%{ top:260px;}
+	80%{ top:260px; }
+	100%{ top:230px; }
+}
+
+.item_list li{ position:relative; float:left; width:271px; margin:10px; padding:10px; background:#fff; 
+box-shadow: 2px 2px 2px #ddd , -2px -2px 2px #ddd;}
+.item_list .con_img{ line-height:0; background: #000; overflow: hidden; }
+.item_list  img{ width:273px; height:205px; }
+.item_list  img{ transition: .8s; }
+.item_list a{ display: block;}
+.item_list li:hover img{ filter:Alpha(opacity=40); opacity: 0.4; }
+.item_list .con_tit{ display: inline-block; line-height: 24px; margin:20px 0; font-size: 14px; color:#000; }
+.item_list .con_tit:hover{ color:#0af; }
+.item_list .con_info{ width:273px; max-height: 72px; line-height:24px; color: #414141;  padding-bottom:54px; }
+.item_list .more_btn{ position: absolute; right:0; bottom:0; width:126px; height:42px; 
+background:#4d4d4d url(../images/case_qmore.png) no-repeat ; transition: .3s;}
+.item_list .more_btn:hover{ background-color: #d21f3d; color: #0195D3; }
+.page{ margin:30px; text-align: center; }
+.page a{ display: inline-block; height: 38px;line-height: 38px; width:78px; margin: 5px; 
+text-align:center; color:#333; border:1px solid #d9d9d9; background:#fff; }
+.page a:hover { background:#616161 ; color: #fff; border-color:#616161; }
+

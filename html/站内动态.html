@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>站内动态</title>
+		<link rel="stylesheet" href="../css/zndt.css" />
+	</head>
+	<body>
+		<header id="header">
+			<section class="clearfix">
+				<div class="hd_logo">
+					<a><img src="../images/logo.png"/></a>
+				</div>
+				<div class="hd_link">
+					<a>Tel：0871-6852 8850</a>
+					<a>联系方式</a>
+				</div>
+			</section>
+			<menu>
+				<ul class="hd_menu">
+					<li>
+						<a>
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li><li>
+						<a>
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li>
+				</ul>
+			</menu>
+		</header>
+		<div id="content" >
+			<header class="con_hd">
+				<div class="con_tit">
+					站内动态<span>NEWS</span>
+				</div>
+				<ul class="con_menu">
+					<li>
+						<a>站内动态</a>
+					</li>
+					<li>
+						<a>站内动态</a>
+					</li>
+					<li>
+						<a>站内动态</a>
+					</li>
+					<li>
+						<a>站内动态</a>
+					</li>
+					<div id="buoy" class="buoy"></div>
+				</ul>
+			</header>
+			<div class="main">
+				<div class="main_time">
+					<p class="day">19</p>
+					<p class="date">2017-08</p>
+					<img />
+				</div>
+				<header class="main_hd">
+					<h3 class="main_tit">昆明天鲜配农业发展有限公司网站正式签约制作</h3>
+					<p class="main_info">
+						<span>编辑:昆明创意</span>
+						<span>源于：www.km-jz.cn</span>
+						<span>浏览：次</span>
+					</p>
+					<p class="main_share">分享：</p>
+				</header>
+				<section class="main_con">
+					<div>昆明天鲜配农业发展有限公司网站正式签约制作中 昆明天鲜配农业发展有限公司网站正式签约制作中昆明天鲜配农业发展有限公司网站正式签约制作中昆明天鲜配农业发展有限公司网站正式签约制作中昆明天鲜配农业发展有限公司网站正式签约制作中昆明天鲜配农业发展有限公司网站正式签约制作中昆明天鲜配农业发展有限公司网站正式签约制作中</div>
+					<p>网址：www.kmtxp.com.cn</p>
+				</section>
+				<section class="main_ft clearfix">
+					<p class="prev"><i></i>上一篇:<a>祛斑世家官方网站第三年续约合作中</a></p>
+					<p class="next"><i></i>下一篇:<a>没有了</a></p>
+					<a class="back">BACK</a>
+				</section>
+			</div>
+		</div>
+		<footer id="footer">
+			<menu>
+				<ul class="ft_menu clearfix">
+					<li>
+						<h3>关于我们</h3>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+					</li>
+					<li>
+						<h3>关于我们</h3>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+					</li>
+					<li>
+						<h3>关于我们</h3>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+					</li>
+					<li>
+						<h3>关于我们</h3>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+						<a>公司简介</a>
+					</li>
+					<li>
+						<h3>关于我们</h3>
+						<p>业务咨询：0871-68528850</p>
+						<p>业务咨询：0871-68528850</p>
+						<p>业务咨询：0871-68528850</p>
+						<img  src="../images/QQ1.png"/>
+						<img  src="../images/QQ2.png"/>
+						<img  src="../images/QQ3.png"/>
+						<img  src="../images/QQ1.png"/>
+					</li>
+				</ul>
+			</menu>
+			<section>
+				<div class="ft_intro clearfix">
+					<span><a>昆明创意网络</a> 始终专注于网站建设-网站制作-网站设计-400电话办理...网络服务</span>
+					<span> Copyright 2014 www.km-jz.cn All rights reserved. 网站统计</span>
+				</div>
+			</section>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.0.3.js" ></script>
+	<script>
+		$(function(){
+			var timeout ;
+			var oB = $("#buoy");
+			$(".con_menu").on("mouseenter","li",function( ev ){
+				//清除定时
+				clearTimeout(timeout);
+				//设置值
+				var index = $(this).index() ,
+				iLastLen = index * 92 + 20,
+				iLen = parseFloat(oB.css("left")) < index*112 ? 30 : -30;
+				//一定时间后添加animate动画效果
+				timeout = setTimeout(function(){
+					$("#buoy").animate({"left":iLastLen+iLen},200,"easeIn").animate({"left":iLastLen},100,"easeOut");
+				},200);
+			})
+			$(".con_menu").on('mouseleave',function(){
+				//清除定时
+				clearTimeout(timeout);
+				iLen = parseFloat(oB.css("left")) == 20 ? 0 : -30;
+				if( iLen )
+				timeout = setTimeout(function(){
+					oB.animate({"left":-10},200,"easeIn").animate({"left":20},100,"easeOut");
+				},200);
+			})
+		})
+	</script>
+</html>
